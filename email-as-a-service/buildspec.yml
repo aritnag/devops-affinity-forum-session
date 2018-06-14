@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean
+      - mvn install
+artifacts:
+  files:
+    - 'Dockerfile'
+    - 'target/email-as-a-service-0.0.1-SNAPSHOT.jar'
+
