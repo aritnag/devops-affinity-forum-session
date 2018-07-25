@@ -1,4 +1,5 @@
 FROM java:8
 EXPOSE 9000
+RUN mvn clean install
 ADD /target/database-product-service-0.0.1-SNAPSHOT.jar database-product-service-0.0.1-SNAPSHOT.jar
-ENTRYPOINT [ìjavaî,î-jarî,îdatabase-product-service-0.0.1-SNAPSHOT.jarî]
+ENTRYPOINT [‚Äújava‚Äù,‚Äù-jar‚Äù,‚Äùdatabase-product-service-0.0.1-SNAPSHOT.jar‚Äù]
